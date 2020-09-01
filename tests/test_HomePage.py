@@ -4,6 +4,7 @@ from selenium import webdriver
 
 
 # from TestData.HomePageData import HomePageData
+from TestData.HomePageData import HomePageData
 from pageObjects.HomePage import HomePage
 from utilities.BaseClass import BaseClass
 
@@ -11,21 +12,24 @@ from utilities.BaseClass import BaseClass
 class TestHomePage(BaseClass):
 
     def test_formSubmission(self,getData):
+        log = self.getLogger()
         homepage = HomePage(self.driver)
-        homepage.getName().send_keys(getData[0])
-        homepage.getemail().send_keys(getData[1])
-        homepage.getPword().send_keys(getData[2])
+        log.info("Name:"+getData["firstname"])
+        homepage.getName().send_keys(getData["firstname"])
+        homepage.getemail().send_keys(getData["email"])
+        homepage.getPword().send_keys(getData["password"])
         homepage.getCheckBox().click()
-        self.selectOptionByText(homepage.getGender(), getData[3])
+        self.selectOptionByText(homepage.getGender(), getData["gender"])
 
         homepage.getCheckBox2().click()
         # dropdown.select_by_value()
         homepage.submitForm().click()
         message = homepage.getSuccessMessage().text
 
-        assert "success" in message
+        assert ("success" in message)
+        self.driver.refresh()
 
 
-    @pytest.fixture(params=[("Aditya", "akstr17official@gmail.com", "1234", "Male"),("Striker", "akstr17obussiness@gmail.com", "1234", "Male"),("Toshaka", "akstr17gaming@gmail.com", "1234", "Female")])
+    @pytest.fixture(params=HomePageData.test_HomePage_Data)
     def getData(self,request):
         return request.param
