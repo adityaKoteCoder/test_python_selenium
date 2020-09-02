@@ -54,3 +54,31 @@ Success! Thank you! Your order will be delivered in next few weeks :-).
 2020-09-02 01:29:10,001 :INFO :test_e2e :Entering country name as ind
 2020-09-02 01:29:17,739 :INFO :test_e2e :Text received from application is ×
 Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-09-03 02:21:57,674 :INFO :test_formSubmission :Name:Aditya
+2020-09-03 02:22:01,093 :INFO :test_formSubmission :Name:Striker
+2020-09-03 02:22:01,093 :INFO :test_formSubmission :Name:Striker
+2020-09-03 02:22:03,059 :INFO :test_formSubmission :Name:Toshaka
+2020-09-03 02:22:03,059 :INFO :test_formSubmission :Name:Toshaka
+2020-09-03 02:22:03,059 :INFO :test_formSubmission :Name:Toshaka
+2020-09-03 02:22:32,717 :INFO :test_e2e :getting all the card titles
+2020-09-03 02:22:32,762 :INFO :test_e2e :iphone X
+2020-09-03 02:22:32,783 :INFO :test_e2e :Samsung Note 8
+2020-09-03 02:22:32,814 :INFO :test_e2e :Nokia Edge
+2020-09-03 02:22:32,836 :INFO :test_e2e :Blackberry
+2020-09-03 02:22:33,127 :INFO :test_e2e :Entering country name as ind
+2020-09-03 02:22:40,831 :INFO :test_e2e :Text received from application is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2020-09-03 02:23:58,982 :INFO :test_formSubmission :Name:Aditya
+2020-09-03 02:24:02,299 :INFO :test_formSubmission :Name:Striker
+2020-09-03 02:24:02,299 :INFO :test_formSubmission :Name:Striker
+2020-09-03 02:24:07,173 :INFO :test_formSubmission :Name:Toshaka
+2020-09-03 02:24:07,173 :INFO :test_formSubmission :Name:Toshaka
+2020-09-03 02:24:07,173 :INFO :test_formSubmission :Name:Toshaka
+2020-09-03 02:24:40,070 :INFO :test_e2e :getting all the card titles
+2020-09-03 02:24:40,123 :INFO :test_e2e :iphone X
+2020-09-03 02:24:40,147 :INFO :test_e2e :Samsung Note 8
+2020-09-03 02:24:40,165 :INFO :test_e2e :Nokia Edge
+2020-09-03 02:24:40,181 :INFO :test_e2e :Blackberry
+2020-09-03 02:24:40,645 :INFO :test_e2e :Entering country name as ind
+2020-09-03 02:24:48,460 :INFO :test_e2e :Text received from application is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
