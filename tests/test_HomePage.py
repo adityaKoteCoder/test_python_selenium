@@ -14,7 +14,7 @@ class TestHomePage(BaseClass):
     def test_formSubmission(self,getData):
         log = self.getLogger()
         homepage = HomePage(self.driver)
-        log.info("Name:"+getData["firstname"])
+        # log.info("Name:"+getData["firstname"])
         homepage.getName().send_keys(getData["firstname"])
         homepage.getemail().send_keys(getData["email"])
         homepage.getPword().send_keys(getData["password"])
@@ -30,6 +30,6 @@ class TestHomePage(BaseClass):
         self.driver.refresh()
 
 
-    @pytest.fixture(params=HomePageData.test_HomePage_Data)
+    @pytest.fixture(params=HomePageData.getTestData("TestCase1"))
     def getData(self,request):
         return request.param
